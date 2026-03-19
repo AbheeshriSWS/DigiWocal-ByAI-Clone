@@ -34,7 +34,7 @@
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
-  font-family : 'Poppins', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size   : 0.95rem;
   color       : #333;
   overflow-x  : hidden;
@@ -47,32 +47,32 @@ img { max-width: 100%; display: block; }
    2. SHARED BUTTONS
 ────────────────────────────────────────── */
 .dw-btn-teal-outline {
-  border         : 2px solid var(--teal);
-  color          : var(--teal);
-  background     : transparent;
-  border-radius  : var(--r-btn);
-  padding        : 10px 34px;
-  font-size      : 0.72rem;
-  font-weight    : 700;
-  letter-spacing : 2px;
-  text-transform : uppercase;
-  transition     : var(--trans);
-  display        : inline-block;
+    background-image: linear-gradient(185deg,#ffb987 0%,#32f2db 100%);
+    background-color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 5px;
+    border-radius: 4px;
+    border-color: rgba(0,0,0,0);
+    border-width: 0px;
+    color: #000;
+    padding: 20px 34px;
 }
 .dw-btn-teal-outline:hover { background: var(--teal); color: #fff; }
 
 .dw-btn-coral {
-  background     : var(--coral);
-  color          : #fff;
-  border         : none;
-  border-radius  : var(--r-btn);
-  padding        : 10px 28px;
-  font-size      : 0.72rem;
-  font-weight    : 700;
-  letter-spacing : 1.5px;
-  text-transform : uppercase;
-  transition     : var(--trans);
-  display        : inline-block;
+    border-width: 0px !important;
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 4px;
+    letter-spacing: 5px;
+    font-size: 14px;
+    font-family: 'Roboto', Helvetica, Arial, Lucida, sans-serif !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    background-image: linear-gradient(90deg, #f7828e 0%, #fcb6ab 100%);
+    padding: 18px 34px;
+    color: #fff;
 }
 .dw-btn-coral:hover {
   background  : var(--coral-d);
@@ -87,139 +87,110 @@ img { max-width: 100%; display: block; }
 .dw-navbar {
   background : #fff;
   box-shadow : 0 2px 16px rgba(0,0,0,0.07);
-  padding    : 12px 0;
+  padding    : 13px 0;
   z-index    : 1060;
 }
 .dw-brand {
-  font-weight    : 800;
-  font-size      : 1.35rem;
-  color          : var(--teal) !important;
-  letter-spacing : -0.3px;
+    font-weight: 800;
+    font-size: 1.35rem;
+    color: var(--teal) !important;
+    letter-spacing: -0.3px;
+    aspect-ratio: 178 / 40;
+    max-width: 178px;
+    width: 100%;
 }
 .dw-nav-link {
-  font-size      : 0.72rem !important;
-  font-weight    : 600 !important;
-  letter-spacing : 1.5px !important;
-  text-transform : uppercase !important;
-  color          : #333 !important;
-  padding        : 8px 12px !important;
-  transition     : var(--trans);
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    text-transform: uppercase !important;
+    color: #000 !important;
+    padding: 8px 12px !important;
+    transition: var(--trans);
+    font-family: "ABeeZee", sans-serif;
+    transition: all 0.4s ease-in-out;
 }
-.dw-nav-link:hover,
-.dw-nav-link:focus { color: var(--teal) !important; }
+.dw-nav-link:hover{ 
+    color: #00000099 !important; }
 
 .dw-dropdown {
   border        : none;
-  border-radius : 10px;
+  border-radius : 0px;
   box-shadow    : 0 10px 30px rgba(0,0,0,0.11);
-  padding       : 6px;
-  min-width     : 192px;
+  padding       : 20px 0;
+  min-width     : 240px;
+  top: 145% !important;
 }
 .dw-dropdown .dropdown-item {
-  font-size     : 0.82rem;
-  font-weight   : 500;
-  border-radius : 6px;
-  padding       : 8px 14px;
-  transition    : var(--trans);
+    font-size: 16px;
+    font-weight: normal;
+    border-radius: 6px;
+    padding: 6px 20px;
+    transition: var(--trans);
+    text-transform: uppercase;
 }
-.dw-dropdown .dropdown-item:hover { background: rgba(26,188,156,0.1); color: var(--teal); }
-
+.dw-dropdown .dropdown-item:hover {
+    background: #fafafa;
+    color: #00000099 !important;
+}
 /* ──────────────────────────────────────────
    4. HERO
 ────────────────────────────────────────── */
-.hero-section {
-  position        : relative;
-  background      : var(--red-grad);
-  min-height      : 100vh;
-  display         : flex;
-  align-items     : center;
-  justify-content : center;
-  overflow        : hidden;
-  padding         : 110px 0 140px;
+
+
+.first {
+    background-image: url(../assets/images/hero-bg.png),linear-gradient(156deg,#e02b20 4%,#0a0002 100%) !important;
+    background-position: top;
+    height: 761px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:relative;
+    transform: translate(0px, 52px);
+}
+.position-absolute-hero{position:absolute;
+top: 0;
+z-index: 999;
+width: 100%;}
+.third{
+    
+    height: 250px;
+    transform: scale(-1,1);
+    bottom:0;
+    z-index: 1;
+    position: absolute;
+}
+.hero-inner  { 
+  position: relative;
+  z-index: 999;
+  top: 23.8%;
 }
 
-/* ── Decorative shapes ── */
-.deco { position: absolute; pointer-events: none; }
-
-/* Large pink ring (like the reference — thick salmon border circle, top-left) */
-.d-ring-outer {
-  width         : 460px;
-  height        : 460px;
-  border        : 58px solid rgba(220, 100, 100, 0.60);
-  border-radius : 50%;
-  top           : -130px;
-  left          : -130px;
-  z-index       : 1;
-}
-/* Slightly darker filled circle sitting inside the ring */
-.d-ring-inner {
-  width         : 270px;
-  height        : 270px;
-  background    : rgba(140, 20, 20, 0.55);
-  border-radius : 50%;
-  top           : -15px;
-  left          : -15px;
-  z-index       : 0;
-}
-/* Teal diamond top-right */
-.d-diamond {
-  width     : 190px;
-  height    : 190px;
-  border    : 8px solid var(--teal);
-  right     : 60px;
-  top       : 55px;
-  transform : rotate(45deg);
-  z-index   : 1;
-}
-/* Coral/salmon filled triangle – bottom left */
-.d-triangle {
-  width        : 0;
-  height       : 0;
-  border-left  : 25px solid transparent;
-  border-right : 25px solid transparent;
-  border-bottom: 44px solid rgba(232, 120, 90, 0.88);
-  bottom       : 18%;
-  left         : 10%;
-  z-index      : 1;
-}
-/* Scattered small outline squares */
-.d-sq { border: 2px solid rgba(255,255,255,0.20); z-index: 1; }
-.d-sq1 { width:34px; height:34px; top:58%; left:18%; transform:rotate(20deg); }
-.d-sq2 { width:22px; height:22px; top:26%; left:47%; transform:rotate(38deg); }
-.d-sq3 { width:16px; height:16px; top:70%; right:23%; transform:rotate(25deg); }
-
-/* Small outline circles */
-.d-circ { border-radius:50%; z-index:1; }
-.d-circ1 { width:30px; height:30px; border:2.5px solid var(--teal); right:190px; top:54%; opacity:.85; }
-.d-circ2 { width:16px; height:16px; border:2px solid rgba(255,255,255,0.28); top:37%; right:30%; }
-
-/* Hero text */
-.hero-inner  { position: relative; z-index: 5; }
 .hero-eyebrow {
-  font-size      : 0.78rem;
-  font-weight    : 300;
-  letter-spacing : 4px;
-  color          : rgba(255,255,255,0.88);
-  text-transform : uppercase;
-  margin-bottom  : 14px;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    line-height: 48px;
+    margin: 0;
 }
 .hero-title {
-  font-size     : clamp(2.2rem, 5.5vw, 4.2rem);
-  font-weight   : 800;
-  color         : #fff;
-  letter-spacing: 3px;
-  line-height   : 1.1;
-  margin-bottom : 28px;
+    font-size: 64px;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 5px;
+    line-height: 89px;
+    margin-top: 10px;
+    margin-bottom: 40px;
 }
-/* Bottom wave */
-.hero-wave {
+/* .hero-wave {
   position   : absolute;
   bottom     : -2px;
   left       : 0;
   width      : 100%;
   z-index    : 4;
   line-height: 0;
-}
+} */
 .hero-wave svg { display:block; width:100%; height:auto; }
 
 /* ──────────────────────────────────────────
@@ -233,132 +204,42 @@ img { max-width: 100%; display: block; }
 /* Mockup wrapper with relative positioning for phone overlay */
 .audit-wrap { position: relative; padding-bottom: 30px; }
 
-/* Analytics desktop card */
-.analytics-card {
-  background    : #fff;
-  border-radius : 16px;
-  box-shadow    : 0 20px 60px rgba(0,0,0,0.10);
-  padding       : 20px 22px 18px;
-  max-width     : 490px;
-  position      : relative;
-  z-index       : 2;
-}
-.ac-head {
-  display         : flex;
-  justify-content : space-between;
-  align-items     : center;
-  margin-bottom   : 14px;
-  padding-bottom  : 10px;
-  border-bottom   : 1px solid #f4f4f4;
-}
-.ac-label { font-size:0.72rem; font-weight:700; color:#333; }
-.ac-tabs  { display:flex; gap:6px; }
-.ac-tab   { font-size:0.60rem; font-weight:600; color:#aaa; background:#f4f4f4; padding:3px 10px; border-radius:10px; cursor:pointer; }
-.ac-tab.active { background:var(--teal); color:#fff; }
-
-/* Bar chart + donut */
-.ac-chart {
-  display     : flex;
-  align-items : flex-end;
-  gap         : 14px;
-  height      : 96px;
-  margin-bottom: 14px;
-}
-.ac-bars {
-  flex         : 1;
-  display      : flex;
-  align-items  : flex-end;
-  gap          : 5px;
-  height       : 100%;
-}
-.ac-bar {
-  flex          : 1;
-  border-radius : 4px 4px 0 0;
-  opacity       : 0.85;
-  min-width     : 10px;
-}
-.ac-donut {
-  width         : 76px;
-  height        : 76px;
-  border-radius : 50%;
-  background    : conic-gradient(var(--teal) 0% 55%, var(--pink) 55% 74%, var(--blue) 74% 100%);
-  display       : flex;
-  align-items   : center;
-  justify-content: center;
-  flex-shrink   : 0;
-  align-self    : center;
-}
-.ac-donut-hole {
-  width          : 50px;
-  height         : 50px;
-  background     : #fff;
-  border-radius  : 50%;
-  display        : flex;
-  align-items    : center;
-  justify-content: center;
-  font-size      : 0.68rem;
-  font-weight    : 700;
-  color          : var(--teal);
-}
-
-/* Stat row */
-.ac-stats {
-  display       : flex;
-  gap           : 10px;
-  border-top    : 1px solid #f4f4f4;
-  padding-top   : 12px;
-}
-.ac-stat { flex:1; }
-.ac-stat-lbl { font-size:0.56rem; color:#bbb; margin-bottom:2px; font-weight:500; }
-.ac-stat-val { font-size:0.80rem; font-weight:700; }
-.c-coral { color:var(--coral); }
-.c-teal  { color:var(--teal); }
-.c-blue  { color:var(--blue); }
-
-/* Floating phone */
-.phone-float {
-  position      : absolute;
-  right         : 10px;
-  bottom        : -10px;
-  width         : 155px;
-  background    : linear-gradient(155deg, #7B2FF7 0%, #2575FC 100%);
-  border-radius : 22px;
-  padding       : 14px 12px 12px;
-  box-shadow    : 0 16px 48px rgba(106,17,203,0.42);
-  transform     : rotate(-5deg);
-  z-index       : 3;
-}
-.pf-dots { display:flex; gap:4px; margin-bottom:8px; }
-.pf-dots span { width:6px; height:6px; border-radius:50%; background:rgba(255,255,255,0.35); }
-.pf-label { font-size:0.52rem; font-weight:700; letter-spacing:0.8px; color:rgba(255,255,255,0.88); margin-bottom:6px; }
-.pf-chart svg { width:100%; height:52px; display:block; }
-.pf-stat { font-size:0.72rem; font-weight:700; color:#fff; margin-top:6px; }
-.pf-stat small { font-size:0.52rem; opacity:0.72; font-weight:400; }
-
 /* Audit text */
-.audit-eyebrow { font-size:0.80rem; color:var(--gray-text); margin-bottom:8px; line-height:1.65; }
-.audit-heading { font-size:1.85rem; font-weight:700; color:#1a1a2e; line-height:1.25; margin-bottom:14px; }
-.audit-desc    { font-size:0.84rem; color:var(--gray-text); line-height:1.8; margin-bottom:24px; }
+.audit-eyebrow {
+    font-size: 16px;
+    color: var(--gray-text);
+    line-height: 32px;
+    font-weight: 400;
+    font-family:  "Open Sans", sans-serif;
+}
+.audit-heading {
+    font-size: 45px;
+    font-weight: 700;
+    color: #333;
+    line-height: 54px;
+    margin-bottom: 10px;
+}
 
 /* ──────────────────────────────────────────
    6. ABOUT INTRO
 ────────────────────────────────────────── */
-.about-intro {
+/* .about-intro {
   background  : #fff;
   padding     : 55px 0 60px;
   border-top  : 1px solid #f0f0f0;
-}
+} */
 .about-para {
-  max-width   : 640px;
-  margin      : 0 auto;
-  font-size   : 0.97rem;
-  line-height : 1.9;
-  color       : #555;
-  text-align  : center;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 25px;
+    line-height: 50px;
+    color: #666;
+    text-align: left;
+    font-weight: 400;
 }
-.dw-teal-link       { color:var(--teal); font-weight:600; }
+.dw-teal-link       { color:#2ea3f2; font-weight:400; }
 .dw-teal-link:hover { color:var(--teal-d); }
-.dw-teal            { color:var(--teal); }
+.dw-teal            { color:#666; }
 
 /* ──────────────────────────────────────────
    7. SERVICES
@@ -368,10 +249,11 @@ img { max-width: 100%; display: block; }
   padding    : 70px 0 90px;
 }
 .sec-title {
-  font-size     : 1.85rem;
-  font-weight   : 700;
-  color         : #222;
-  margin-bottom : 48px;
+    font-size: 45px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 48px;
+    line-height: 54px;
 }
 
 .svc-card {
@@ -416,14 +298,14 @@ img { max-width: 100%; display: block; }
    8. PLATFORM SECTION (Purple)
 ────────────────────────────────────────── */
 .platform-section { overflow:hidden; position:relative; }
-.plat-wave-top     { line-height:0; }
-.plat-wave-top svg { display:block; width:100%; }
+/* .plat-wave-top     { line-height:0; } */
+/* .plat-wave-top svg { display:block; width:100%; } */
 .plat-bg           { background:var(--purple-grad); }
-.plat-wave-bot     { line-height:0; }
-.plat-wave-bot svg { display:block; width:100%; }
+/* .plat-wave-bot     { line-height:0; }
+.plat-wave-bot svg { display:block; width:100%; } */
 
 /* Two overlapping phone mockups */
-.plat-phones {
+/* .plat-phones {
   position        : relative;
   height          : 400px;
   display         : flex;
@@ -447,11 +329,21 @@ img { max-width: 100%; display: block; }
 .pp-row   { margin-bottom:9px; }
 .pp-lbl   { font-size:0.54rem; color:#999; font-weight:500; margin-bottom:3px; }
 .pp-track { height:6px; background:#f0f0f0; border-radius:3px; overflow:hidden; }
-.pp-fill  { height:100%; border-radius:3px; }
+.pp-fill  { height:100%; border-radius:3px; } */
 
 /* Platform text */
 .plat-heading { font-size:1.65rem; font-weight:700; color:#fff; line-height:1.4; margin-bottom:16px; }
 .plat-body    { font-size:0.84rem; color:rgba(255,255,255,0.88); line-height:1.8; }
+
+.third-purple {
+    transform: scale(1,1);
+    position: absolute;
+    bottom: 0;
+    height: 480px;
+    z-index: 1;
+    top: 40%;
+    left: -25px;
+}
 
 /* ──────────────────────────────────────────
    9. SERVICE RANGE
@@ -765,4 +657,33 @@ img { max-width: 100%; display: block; }
   .cta-heading   { font-size:1.35rem; }
   .cta-sub       { font-size:1.1rem; }
   .footer-copy   { font-size:0.62rem; text-align:center; }
+}
+
+
+/* abheeshri */
+
+.logo-container {
+    max-width: 1095px !important;
+    width: 100%;
+    margin: auto;
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+i.bi.bi-search::before{
+  transform: rotate(90deg) !important;
+}
+
+.dw-dropdown li{
+  padding: 0 20px;
+} 
+
+#dwNav {
+    margin-right: -15px;
+}
+
+.navbar-nav .nav-item:first-child .dw-nav-link {
+    padding: 8px 16px !important;
 }

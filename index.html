@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DigiWocal – Your Digital Voice</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"/>
   <link rel="stylesheet" href="assets/style.css"/>
@@ -14,71 +16,56 @@
 <!-- ╔══════════════════════════════════════════╗
      ║  NAVBAR                                  ║
      ╚══════════════════════════════════════════╝ -->
-<nav class="navbar navbar-expand-lg dw-navbar sticky-top">
-  <div class="container">
-    <a class="navbar-brand dw-brand" href="#">digiwocal</a>
-    <button class="navbar-toggler border-0 shadow-none" type="button"
-      data-bs-toggle="collapse" data-bs-target="#dwNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="dwNav">
-      <ul class="navbar-nav align-items-lg-center">
-        <li class="nav-item"><a class="nav-link dw-nav-link" href="#">About</a></li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dw-nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services</a>
-          <ul class="dropdown-menu dw-dropdown">
-            <li><a class="dropdown-item" href="#">SEO Strategy</a></li>
-            <li><a class="dropdown-item" href="#">Social Media Strategy</a></li>
-            <li><a class="dropdown-item" href="#">Content Strategy</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link dw-nav-link" href="#">Blog</a></li>
-        <li class="nav-item"><a class="nav-link dw-nav-link" href="#">Contact</a></li>
-        <li class="nav-item"><a class="nav-link dw-nav-link" href="#"><i class="bi bi-search"></i></a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+
+     <header class="sticky-top">
+      <div class="position-absolute-hero">
+        <nav class="navbar navbar-expand-lg dw-navbar">
+          <div class="container logo-container">
+            <a class="navbar-brand dw-brand" href="#">
+              <img src="assets/images/digiwocal-png.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler border-0 shadow-none" type="button"
+              data-bs-toggle="collapse" data-bs-target="#dwNav">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="dwNav">
+              <ul class="navbar-nav align-items-lg-center">
+                <li class="nav-item"><a class="nav-link dw-nav-link" href="#">About</a></li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dw-nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Services
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg>
+                  </a>
+                  <ul class="dropdown-menu dw-dropdown">
+                    <li><a class="dropdown-item" href="#">SEO Strategy</a></li>
+                    <li><a class="dropdown-item" href="#">Social Media <br> Strategy</a></li>
+                    <li><a class="dropdown-item" href="#">Content Strategy</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link dw-nav-link" href="#">Blog</a></li>
+                <li class="nav-item"><a class="nav-link dw-nav-link" href="#">Contact</a></li>
+                <li class="nav-item"><a class="nav-link dw-nav-link" href="#"><i class="bi bi-search"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+     </header>
 
 
 <!-- ╔══════════════════════════════════════════╗
      ║  HERO                                    ║
      ╚══════════════════════════════════════════╝ -->
-<section class="hero-section">
-
-  <!-- Large pink ring top-left (half off-screen) -->
-  <div class="deco d-ring-outer"></div>
-  <div class="deco d-ring-inner"></div>
-
-  <!-- Teal diamond top-right -->
-  <div class="deco d-diamond"></div>
-
-  <!-- Coral triangle bottom-left -->
-  <div class="deco d-triangle"></div>
-
-  <!-- Scattered outline squares -->
-  <div class="deco d-sq d-sq1"></div>
-  <div class="deco d-sq d-sq2"></div>
-  <div class="deco d-sq d-sq3"></div>
-
-  <!-- Small circle outlines -->
-  <div class="deco d-circ d-circ1"></div>
-  <div class="deco d-circ d-circ2"></div>
-
-  <!-- Hero text -->
-  <div class="container hero-inner text-center">
-    <p class="hero-eyebrow">REBRANDING &nbsp;|&nbsp; MARKETING &nbsp;|&nbsp; WEB DESIGN</p>
-    <h1 class="hero-title">YOUR DIGITAL VOICE</h1>
-    <a href="#" class="btn dw-btn-teal-outline">LEARN MORE</a>
-  </div>
-
-  <!-- Bottom organic wave -->
-  <div class="hero-wave">
-    <svg viewBox="0 0 1440 110" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,55 C180,110 360,10 600,65 C780,105 960,25 1200,60 C1320,78 1400,62 1440,58 L1440,110 L0,110 Z" fill="#ffffff"/>
-    </svg>
-  </div>
-</section>
+<section class="first">
+        <div class="container hero-inner text-center">
+        <h3 class="hero-eyebrow">REBRANDING | MARKETING | WEB DESIGN</h3>
+        <h1 class="hero-title">YOUR DIGITAL VOICE</h1>
+        <a href="#" class="btn dw-btn-teal-outline">LEARN MORE</a>
+      </div>
+        <div class="third">
+            <svg width="100%" height="250px" viewBox="0 0 1280 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><g fill="#ffffff"><path d="M0 140h1280C573.08 140 0 0 0 0z" fill-opacity=".3"/><path d="M0 140h1280C573.08 140 0 30 0 30z" fill-opacity=".5"/><path d="M0 140h1280C573.08 140 0 60 0 60z"/></g></svg>
+        </div>
+    </section>
+     
 
 
 <!-- ╔══════════════════════════════════════════╗
@@ -89,82 +76,23 @@
     <div class="row align-items-center g-4 g-xl-5">
 
       <!-- Analytics mockup -->
-      <div class="col-lg-7">
+      <div class="col-lg-8">
         <div class="audit-wrap">
 
           <!-- Desktop analytics card -->
           <div class="analytics-card">
-            <div class="ac-head">
-              <span class="ac-label">Website Analytics</span>
-              <div class="ac-tabs">
-                <span class="ac-tab active">Summary</span>
-                <span class="ac-tab">Details</span>
-              </div>
-            </div>
-            <div class="ac-body">
-              <!-- Bar + Donut -->
-              <div class="ac-chart">
-                <div class="ac-bars">
-                  <div class="ac-bar" style="height:50%; background:#E91E8C;"></div>
-                  <div class="ac-bar" style="height:72%; background:#3498DB;"></div>
-                  <div class="ac-bar" style="height:38%; background:#1ABC9C;"></div>
-                  <div class="ac-bar" style="height:90%; background:#E91E8C;"></div>
-                  <div class="ac-bar" style="height:60%; background:#3498DB;"></div>
-                  <div class="ac-bar" style="height:78%; background:#1ABC9C;"></div>
-                  <div class="ac-bar" style="height:44%; background:#E91E8C;"></div>
-                  <div class="ac-bar" style="height:66%; background:#3498DB;"></div>
-                </div>
-                <div class="ac-donut">
-                  <div class="ac-donut-hole">72%</div>
-                </div>
-              </div>
-              <!-- Stat row -->
-              <div class="ac-stats">
-                <div class="ac-stat">
-                  <div class="ac-stat-lbl">Organic Traffic</div>
-                  <div class="ac-stat-val c-coral">4,521</div>
-                </div>
-                <div class="ac-stat">
-                  <div class="ac-stat-lbl">Bounce Rate</div>
-                  <div class="ac-stat-val c-teal">32%</div>
-                </div>
-                <div class="ac-stat">
-                  <div class="ac-stat-lbl">Drop Off Rate</div>
-                  <div class="ac-stat-val c-blue">18%</div>
-                </div>
-              </div>
-            </div>
+            <img src="assets/images/laptop-analytics-2.png" alt="">
           </div>
 
-          <!-- Floating phone – purple gradient, overlapping right -->
-          <div class="phone-float">
-            <div class="pf-dots"><span></span><span></span><span></span></div>
-            <div class="pf-label">Organic Traffic</div>
-            <div class="pf-chart">
-              <svg viewBox="0 0 130 65" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <linearGradient id="pg" x1="0" y1="0" x2="0" y2="1">
-                    <stop offset="0%" stop-color="rgba(255,255,255,0.28)"/>
-                    <stop offset="100%" stop-color="rgba(255,255,255,0.02)"/>
-                  </linearGradient>
-                </defs>
-                <polygon points="0,58 22,40 44,50 66,26 88,36 110,13 130,20 130,65 0,65" fill="url(#pg)"/>
-                <polyline points="0,58 22,40 44,50 66,26 88,36 110,13 130,20"
-                  fill="none" stroke="#fff" stroke-width="2.2"
-                  stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <div class="pf-stat">+24% <small>this month</small></div>
-          </div>
+        
 
         </div>
       </div>
 
       <!-- Text col -->
-      <div class="col-lg-5">
-        <p class="audit-eyebrow">Not sure what all improvements your web requires to rank better?</p>
+      <div class="col-lg-4">
         <h2 class="audit-heading">Get Your Web Audit Done For Free!</h2>
-        <p class="audit-desc">Schedule a <strong>web audit</strong> with <strong>DigiWocal</strong> to understand the scope of improvements we can do on your website.</p>
+        <p class="audit-eyebrow">Not sure what all improvements your web requires to rank better? Schedule a <strong>web audit</strong> with <strong>DigiWocal</strong> to understand the scope of improvements we can do on your website.</p>
         <a href="#" class="btn dw-btn-coral">SCHEDULE AN AUDIT</a>
       </div>
 
@@ -251,11 +179,11 @@
 <section class="platform-section">
 
   <!-- Top wave: white → purple -->
-  <div class="plat-wave-top">
+  <!-- <div class="plat-wave-top">
     <svg viewBox="0 0 1440 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0,0 L1440,0 L1440,120 C1100,40 800,100 500,70 C300,52 120,90 0,120 Z" fill="#ffffff"/>
     </svg>
-  </div>
+  </div> -->
 
   <div class="plat-bg">
     <div class="container">
@@ -263,50 +191,7 @@
 
         <!-- Phone mockups -->
         <div class="col-lg-6 order-lg-1 order-2">
-          <div class="plat-phones">
-            <!-- Back phone (rotated) -->
-            <div class="pp pp-back">
-              <div class="pp-notch"></div>
-              <div class="pp-head">PAID AD DATA</div>
-              <div class="pp-row">
-                <div class="pp-lbl">Social Media Marketing</div>
-                <div class="pp-track"><div class="pp-fill" style="width:72%;background:#E91E8C;"></div></div>
-              </div>
-              <div class="pp-row">
-                <div class="pp-lbl">Search Engine Marketing</div>
-                <div class="pp-track"><div class="pp-fill" style="width:55%;background:#3498DB;"></div></div>
-              </div>
-              <div class="pp-row">
-                <div class="pp-lbl">Content Marketing</div>
-                <div class="pp-track"><div class="pp-fill" style="width:82%;background:#1ABC9C;"></div></div>
-              </div>
-              <div class="pp-row">
-                <div class="pp-lbl">SEO</div>
-                <div class="pp-track"><div class="pp-fill" style="width:44%;background:#FF6B35;"></div></div>
-              </div>
-            </div>
-            <!-- Front phone -->
-            <div class="pp pp-front">
-              <div class="pp-notch"></div>
-              <div class="pp-head">PAID AD DATA</div>
-              <div class="pp-row">
-                <div class="pp-lbl">Social Media Marketing</div>
-                <div class="pp-track"><div class="pp-fill" style="width:62%;background:#E91E8C;"></div></div>
-              </div>
-              <div class="pp-row">
-                <div class="pp-lbl">Search Engine Marketing</div>
-                <div class="pp-track"><div class="pp-fill" style="width:78%;background:#3498DB;"></div></div>
-              </div>
-              <div class="pp-row">
-                <div class="pp-lbl">Content Marketing</div>
-                <div class="pp-track"><div class="pp-fill" style="width:50%;background:#1ABC9C;"></div></div>
-              </div>
-              <div class="pp-row">
-                <div class="pp-lbl">SEO</div>
-                <div class="pp-track"><div class="pp-fill" style="width:88%;background:#FF6B35;"></div></div>
-              </div>
-            </div>
-          </div>
+          <img src="assets/images/phones-diagonal-1.png" alt="Phone">
         </div>
 
         <!-- Text -->
@@ -315,16 +200,20 @@
           <p class="plat-body">It is more likely that the person who see your brand on various social platform multiple times tends to become your customer.</p>
         </div>
 
+        <div class="third-purple">
+          <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="250px" viewBox="0 0 1280 140" preserveAspectRatio="none"><g fill="#ffffff"><path d="M0 140h1280C573.08 140 0 0 0 0z" fill-opacity=".3"/><path d="M0 140h1280C573.08 140 0 30 0 30z" fill-opacity=".5"/><path d="M0 140h1280C573.08 140 0 60 0 60z"/></g></svg>
+        </div>
+
       </div>
     </div>
   </div>
 
   <!-- Bottom wave: purple → gray -->
-  <div class="plat-wave-bot">
+  <!-- <div class="plat-wave-bot">
     <svg viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M0,0 C350,80 700,20 1050,55 C1200,70 1340,48 1440,35 L1440,100 L0,100 Z" fill="#F8F9FA"/>
     </svg>
-  </div>
+  </div> -->
 
 </section>
 
